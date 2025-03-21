@@ -1,0 +1,16 @@
+.title{
+    text-align: center;
+}
+
+.gameChoiceContainer{
+    width: 95%;
+    border-style: solid;
+    border-color: black;
+    background-color: lightblue;
+    border-width: 5px;
+}
+
+.gameChoiceContainer:hover{
+    background-color: cornflowerblue;
+}
+

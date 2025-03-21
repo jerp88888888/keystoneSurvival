@@ -1,0 +1,22 @@
+.title{
+    text-align: center;
+}
+
+.gameInfoContainer{
+    height: 50% !important;
+    width: 95%;
+}
+
+.gameInfoImage{
+    display: inline-block;
+    height: 25%;
+    max-height: 500px !important;
+    max-width: 500px !important;
+    width: auto;
+    border-radius: 50%;
+
+}
+
+.description{
+    
+}
