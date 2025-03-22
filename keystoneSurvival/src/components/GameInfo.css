@@ -9,7 +9,7 @@
 
 .gameInfoImage{
     display: inline-block;
-    height: 25%;
+    height: 50%;
     max-height: 500px !important;
     max-width: 500px !important;
     width: auto;

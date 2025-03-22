@@ -1,0 +1,17 @@
+﻿Event,Prompt,Action 1,Success Rate 1,Action 2,Success Rate 2,Action 3,Success Rate 3,Action 4,Success Rate 4,Action 5,Success Rate 5
+Building a Dam,You need to provide yourself protection. What do you build your dam out of?,Use strong logs and mud,90,Use only sticks,50,Build in a fast-moving river,30,Reinforce with stones,85,Abandon and find a new spot,60
+Escaping a Predator,You are being pursued by a hungry wolf. How do you escape?,Dive underwater,95,Slap tail to warn others,80,Run on land,40,Hide in the lodge,85,Freeze in place,20
+Finding Food,You are famished and need to find some food. What do you eat?,Chew on fresh tree bark,90,Eat aquatic plants,80,Search far from water,50,Steal from another beaver,30,Store extra food for winter,85
+Repairing a Dam,Your dam has taken damage. How do you repair it?,Patch holes with mud,85,Use extra branches,75,Rebuild entire structure,50,Ignore small leaks,40,Strengthen weak points,80
+Surviving Winter,You feel the temperature lowering. Winter is coming. How do you prepare?,Store extra food,95,Thicken fur coat,85,Stay inside lodge,80,Keep the dam sealed,90,Rely on body fat reserves,75
+Dealing with Humans,You have humans trying to take your land. What do you do?,Avoid human areas,90,Chew trees at night,80,Ignore human structures,40,Move to a remote location,85,Stay hidden in water,70
+Navigating a Flood,Water levels are rising. How do you prepare?,Strengthen the dam,80,Move to higher ground,85,Stay inside the lodge,70,Monitor water levels,75,Rebuild in a safer area,65
+Defending Territory,You need to defend yourself and your territory. How?,Chase intruders away,75,Mark territory with scent,85,Fight if necessary,50,Expand lodge size,80,Form an alliance,60
+Avoiding Disease,You noticed others are unliving at an alarming rate due to illness. How do you avoid the illness?,Keep lodge clean,90,Avoid contaminated water,85,Eat a balanced diet,80,Stay in a strong group,75,Move to a new area if sick,70
+Finding a New Home,You need to find a new home. How do you do this?,Search for a safe water source,85,Build in a quiet location,80,Check for predators first,75,Avoid human activity,90,Ensure food availability,85
+Recovering from Injury,You have sustained damage playing the game we call life. What do you do?,Rest inside the lodge,85,Rely on group members,75,Eat nutritious food,90,Stay away from danger,80,Let wounds heal naturally,70
+Exploring New Areas,You see a unexplored area ahead. What do you do?,Travel in groups,85,Mark paths with scent,80,Stay near water sources,90,You only live once,50,Establish new territory,75
+Adapting to Climate Change,Global warming … ,Adjust food storage habits,80,Strengthen dams for weather changes,85,Monitor seasonal shifts,75,Move to cooler areas,70,Modify lodge insulation,90
+Predator Home Invasion,A predator tried to attack your home. What do you do?,Block entry points,85,Confront the intruder,60,Evacuate if necessary,70,Stay hidden inside,80,Strengthen defenses,75
+Competing for Resources,Resources have become scare. What do you do?,Find alternative food sources,80,Expand territory,75,Steal from rivals,40,Store food more efficiently,85,Defend existing food supplies,70
+Avoiding Drought,"In comparison, the Sahara looks like the Pacific. What do you do?",Store extra water,85,Build in deeper water sources,90,Expand food storage,75,Move to a better location,80,Monitor weather patterns,70

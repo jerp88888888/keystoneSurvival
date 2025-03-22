@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import GameIntro from './pages/GameIntro.tsx';
+import Game from './pages/Game';
 import './App.css'
 
 
@@ -11,7 +11,7 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<GameIntro />} />
+          <Route path="/" element={<Game />} />
         </Routes>
     </Router>
     </>

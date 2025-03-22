@@ -1,10 +1,6 @@
 import React from 'react';
 import "./GameChoice.css"
-
-interface GameChoiceProps {
-    option: string,
-    affect: number,
-};
+import { GameChoiceProps } from '../ts/classes/classSuport';
 
 function GameChoice({props}: {props:GameChoiceProps}){
     return(
