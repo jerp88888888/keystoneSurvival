@@ -3,10 +3,11 @@ import GameEvent from '../components/GameEvent';
 import { GameEventProps } from '../ts/classes/classSuport';
 import { Event, Option } from '../ts/classes/classSuport';
 import {beaverSituations} from '../db/situationRef.js';
+import "./Game.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
- function RefineRawData(rawData:Object[]){
-    let refinedData = [];
+ function RefineRawData(rawData:object[]){
+    let refinedData:object[] = [];
 
     for(let i = 0; i<rawData.length; i++){
       let eventObject = {};
@@ -25,7 +26,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function Game() {
-  const [gameInfo, setGameInfo] = React.useState({data: RefineRawData(beaverSituations), event: {}, survival: 100});
+  const [gameInfo, setGameInfo] = React.useState({data: RefineRawData(beaverSituations), event: {}, survival: 100, level:0});
+  
   let imgSrc = "";
   let component:React.ReactElement=undefined;
   let gameElementProps:GameEventProps = {};
@@ -68,13 +70,21 @@ function Game() {
     setGameInfo(gameInfo);
   }
 
-
+  
   
 
   return (
     <>
-     <div className='row'>
-        <h2>{Math.round(gameInfo.survival)}%</h2>
+     <div className='GameContainer' >
+        <div className='row'>
+          <div className='col col-6'>
+            <h2>{Math.round(gameInfo.survival)}%</h2>
+          </div>
+          <div className='col col-6'>
+            <h2>Level: {gameInfo.level}</h2>
+          </div>
+        </div>
+        
         <GameEvent props={
           {gameInfoProps: {
             title: gameInfo.event.Event,
