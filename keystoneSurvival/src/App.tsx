@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { HashRouter as Router, Routes, Route} from "react-router-dom";
 import Game from './pages/Game';
-import Fail from './pages/Result';
-import Success from './pages/Success';
+import Result from './pages/Result';
+import Home from './pages/Home';
 import './App.css'
 
 
@@ -13,10 +13,13 @@ function App() {
     <>
     <Router>
         <Routes>
-          <Route path="/" element={<Game />} />
+          <Route path="/" element={<Home />} />
         </Routes>
         <Routes>
-          <Route path="/Result/:score" element={<Fail />} />
+          <Route path="/Game" element={<Game />} />
+        </Routes>
+        <Routes>
+          <Route path="/Result/:score" element={<Result />} />
         </Routes>
     </Router>
     </>
