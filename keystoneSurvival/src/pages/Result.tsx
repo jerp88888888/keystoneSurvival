@@ -1,7 +1,7 @@
-import * as React from 'react';
 import { useParams } from 'react-router-dom';
 import "./Result.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+//@ts-expect-error
 import {jokes} from "../db/situationRef.js";
 
 function GetJoke(score:number){
@@ -22,9 +22,9 @@ function Result() {
 
   return(
     <>
-        <h1>Score: {Math.round(score)}%</h1>
+        <h1>Score: {Math.round(Number(score))}%</h1>
         <h1>{joke}</h1>
-        <img src={src} alt="Video of animal" />
+        <img src={src} className="imageStyling" alt="Video of animal" />
     </>
   )
 }

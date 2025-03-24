@@ -1,7 +1,7 @@
 export class GameEventProps{
     gameInfoProps: GameInfoProps = new GameInfoProps();
-    gameChoices: GameChoiceProps[] = [];
-    gameInfo:Any = null;
+    gameChoices: GameChoiceProps[] = [];//@ts-expect-error
+    gameInfo:Any = null;//@ts-expect-error
     setGameInfo:Any = null;
 
 };

@@ -1,10 +1,9 @@
-import * as React from 'react';
 //ts-ignore
 import "./Home.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useNavigate } from 'react-router-dom';
 
-function HandleStartGame(navigate){
+function HandleStartGame(navigate:Function){
     navigate("/Game");
 }
 

@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { HashRouter as Router, Routes, Route} from "react-router-dom";
 import Game from './pages/Game';
 import Result from './pages/Result';

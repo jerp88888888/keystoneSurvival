@@ -1,25 +1,23 @@
 import * as React from 'react';
 import GameEvent from '../components/GameEvent';
-import { GameEventProps } from '../ts/classes/classSuport';
 import { Option } from '../ts/classes/classSuport';
-//ts-ignore
+//@ts-expect-error
 import {beaverSituations} from '../db/situationRef.js';
 import "./Game.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { useNavigate } from 'react-router-dom';
 
  function RefineRawData(rawData:object[]){
     const refinedData:object[] = [];
 
     for(let i = 0; i<rawData.length; i++){
-      const eventObject = {};
-      eventObject['Event'] = rawData[i]["Event"];
-      eventObject['Prompt'] = rawData[i]["Prompt"];
-      eventObject['Options'] = [];
-      eventObject.Options.push(new Option(rawData[i]["Action 1"], rawData[i]["Success Rate 1"]));
-      eventObject.Options.push(new Option(rawData[i]["Action 2"], rawData[i]["Success Rate 2"]));
-      eventObject.Options.push(new Option(rawData[i]["Action 3"], rawData[i]["Success Rate 3"]));
-      eventObject.Options.push(new Option(rawData[i]["Action 4"], rawData[i]["Success Rate 4"]));
+      const eventObject = {};//@ts-expect-error
+      eventObject['Event'] = rawData[i]["Event"];//@ts-expect-error
+      eventObject['Prompt'] = rawData[i]["Prompt"];//@ts-expect-error
+      eventObject['Options'] = [];//@ts-expect-error
+      eventObject.Options.push(new Option(rawData[i]["Action 1"], rawData[i]["Success Rate 1"]));//@ts-expect-error
+      eventObject.Options.push(new Option(rawData[i]["Action 2"], rawData[i]["Success Rate 2"]));//@ts-expect-error
+      eventObject.Options.push(new Option(rawData[i]["Action 3"], rawData[i]["Success Rate 3"]));//@ts-expect-error
+      eventObject.Options.push(new Option(rawData[i]["Action 4"], rawData[i]["Success Rate 4"]));//@ts-expect-error
       eventObject.Options.push(new Option(rawData[i]["Action 5"], rawData[i]["Success Rate 5"]));
       refinedData.push(eventObject);
     }
@@ -29,10 +27,7 @@ import { useNavigate } from 'react-router-dom';
 
 function Game() {
   const [gameInfo, setGameInfo] = React.useState({data: RefineRawData(beaverSituations), event: {}, survival: 100, level:0});
-
   let imgSrc = "";
-  const component:React.ReactElement=undefined;
-  const gameElementProps:GameEventProps = {};
 
   
 
@@ -88,11 +83,11 @@ function Game() {
         </div>
         
         <GameEvent props={
-          {gameInfoProps: {
+          {gameInfoProps: {//@ts-expect-error
             title: gameInfo.event.Event,
-            img: imgSrc,
+            img: imgSrc,//@ts-expect-error
             description: gameInfo.event.Prompt
-          },
+          },//@ts-expect-error
           gameChoices: gameInfo.event.Options,
           gameInfo: gameInfo,
           setGameInfo: setGameInfo}

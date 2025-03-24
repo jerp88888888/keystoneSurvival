@@ -1,6 +1,5 @@
-import React from 'react';
 import "./GameChoice.css"
-import { GameChoiceProps,Event, GameInfo } from '../ts/classes/classSuport';
+import { GameChoiceProps, GameInfo } from '../ts/classes/classSuport';
 import { useNavigate } from 'react-router-dom';
 
 function UpdateGame (chanceOfSuccess: number, gameInfo:GameInfo, setGameInfo:Function, navigator:Function){
@@ -16,8 +15,8 @@ function UpdateGame (chanceOfSuccess: number, gameInfo:GameInfo, setGameInfo:Fun
     tmpGameInfo.data = [...gameInfo.data.slice(0,index),...gameInfo.data.slice(index+1)];//@ts-expect-error
     tmpGameInfo.level = gameInfo.level+1;
     console.log("Temporary Game Info");
-    console.log(tmpGameInfo);
-    if(tmpGameInfo.level > 10){
+    console.log(tmpGameInfo);//@ts-expect-error
+    if(tmpGameInfo.level > 10){//@ts-expect-error
         navigator("/Result/"+Math.round(tmpGameInfo.survival));
     }
     else{
@@ -31,7 +30,7 @@ function GameChoice({props}: {props:GameChoiceProps}){
     
     return(
         <div className="gameChoiceContainer" onClick={() => UpdateGame(props.chanceOfSuccess,props.gameInfo,props.setGameInfo,navigator)}>
-            <p>{props.option}---{props.chanceOfSuccess}</p>
+            <p>{props.option}</p>
         </div>
     );
 }
