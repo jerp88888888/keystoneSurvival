@@ -1,3 +1,8 @@
-/* .GameContainer{
-    background-color: beige;
-} */
+body {
+    background-color: #abdbe3!important;
+}
+
+h5 {
+    margin-top: 10px !important;
+    margin-bottom: 5% !important;
+}

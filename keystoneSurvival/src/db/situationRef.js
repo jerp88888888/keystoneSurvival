@@ -223,4 +223,62 @@ export const beaverSituations = [
       "Action 5": "Monitor weather patterns",
       "Success Rate 5": 70
     }
-  ]
+];
+/*
+40	You're score is irrELEPHANT
+30	You croaked before you diled 
+20	Hare today, gone tomorrow
+10	you only know otter-nonsense
+ */
+export const jokes = [
+  {
+    minimumScore: 90,
+    joke: "You're one in a KRILLion",
+    src: "https://media1.tenor.com/m/5PeWpbCeMFEAAAAC/krill-krillion-shrimple.gif"
+  },
+  {
+    minimumScore: 80,
+    joke: "Seal with it",
+    src: "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjN0MHRyazdtcHBqd2x0MDczdm14N3h3bjlreDk2ZHUxdmJ0eHRhcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/GEqVF4SSaAkik/giphy.gif"
+  },
+  {
+    minimumScore: 70,
+    joke: "Are you a tiger because you weren't lion?",
+    src: "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHhwY29tcnlyczFhNnl6anVmNnNvZmhpNmpqazVyZWl5cms5MzVxMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ZkBcyGcNwNUUU/giphy.gif"
+  },
+  {
+    minimumScore: 60,
+    joke: "Did you chetah?",
+    src: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmxobnRsNm9iZmhkeHgwaDhoeGE0ajBhaXZxcDR6eHo5bHlpZTF6OSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/TczEHnmHv2fu/giphy.gif"
+  },
+  {
+    minimumScore: 50,
+    joke: "You're not goated.",
+    src: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExb21oZHhpdGVoZHlkdXhoOXJwam41dTNrZGliY3JmZmM5MmxmMGtnZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/cMso9wDwqSy3e/giphy.gif"
+  },
+  {
+    minimumScore: 40,
+    joke: "DAMMM",
+    src: "https://media.giphy.com/media/rN3DPrls6FQgT4dH5i/giphy.gif?cid=790b7611wipqjvk49ozz5emxocu9ss9dznj0rqvq7hwcdsgr&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+  },
+  {
+    minimumScore: 30,
+    joke: "You're score is irrELEPHANT",
+    src: "https://media.giphy.com/media/l41Yr6on4CT9hwt3y/giphy.gif?cid=790b7611wpl52osgvhrs8i6ueaggx25lkx2al39e39zlpr71&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+  },
+  {
+    minimumScore: 20,
+    joke: "You croaked before you diled",
+    src: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWZnbmV6NjQyZWFwd2Vkdjd0OWQ3MWEwOTU4YXYxc2QyazNieDR2aCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/6asQyrVejTsWc/giphy.gif"
+  },
+  {
+    minimumScore: 10,
+    joke: "Hare today, gone tomorrow",
+    src: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjQ2YnEzY25rN25jaDllaXZhd2hsZXRoaWM4ZnF6ZXoyMHBld2RieiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/WiXMlla4ZFR8Q/giphy.gif"
+  },
+  {
+    minimumScore: 0,
+    joke: "you only know otter-nonsense",
+    src: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnZoNDl0MGFlMWdpdXpiYnFwY3U3NzJpYjdhcnd3NHNjZ3JzdDYxeCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/JLBT3PV3tOvIY/giphy.gif"
+  },
+]

@@ -3,9 +3,9 @@ import GameInfo from './GameInfo';
 import GameChoice from './GameChoice';
 import { GameEventProps } from '../ts/classes/classSuport';
 
-function Shuffle(localOptions:Object[]){
+function Shuffle(localOptions:object[]){
   let index = Math.floor(Math.random()*localOptions.length);
-  let copy = [];
+  const copy = [];
   
   for(let i = 0; i<localOptions.length; i++){
     if(index<localOptions.length-1){

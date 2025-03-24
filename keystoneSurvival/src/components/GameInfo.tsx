@@ -12,7 +12,7 @@ function GameInfo({props}: {props:GameInfoProps}){
         <div className="gameInfoContainer">
             <h2 className="title">{props.title}</h2>
             <img className="gameInfoImage" src={props.img} alt=""/>
-            <p className="description">{props.description}</p>
+            <h5 className="description">{props.description}</h5>
         </div>
     );
 }

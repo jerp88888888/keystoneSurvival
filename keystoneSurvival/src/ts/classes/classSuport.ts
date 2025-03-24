@@ -33,3 +33,19 @@ export class Event {
     prompt:string = "";
     options:Option[] = [];
 }
+
+export class GameInfo {
+    data:Event[] = [] ;
+    event: Event = {event:"",prompt:"",options:[]};
+    survival:number = 100;
+    level:number = 1;
+
+    constructor (){
+        this.data = [];
+        this.event = {event:"",prompt:"",options:[]};
+        this.survival = 100;
+        this.level = 1;
+    }
+
+    
+}

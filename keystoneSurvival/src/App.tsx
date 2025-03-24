@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { BrowserRouter as Router, Routes, Route, BrowserRouter} from "react-router-dom";
+import { HashRouter as Router, Routes, Route} from "react-router-dom";
 import Game from './pages/Game';
-import Fail from './pages/Fail';
+import Fail from './pages/Result';
 import Success from './pages/Success';
 import './App.css'
 
@@ -11,17 +11,14 @@ function App() {
 
   return (
     <>
-    <BrowserRouter>
+    <Router>
         <Routes>
           <Route path="/" element={<Game />} />
         </Routes>
         <Routes>
-          <Route path="/Fail" element={<Fail />} />
+          <Route path="/Result/:score" element={<Fail />} />
         </Routes>
-        <Routes>
-          <Route path="/Success" element={<Success />} />
-        </Routes>
-    </BrowserRouter>
+    </Router>
     </>
   )
 }

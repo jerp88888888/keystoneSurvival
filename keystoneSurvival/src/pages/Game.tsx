@@ -1,16 +1,18 @@
 import * as React from 'react';
 import GameEvent from '../components/GameEvent';
 import { GameEventProps } from '../ts/classes/classSuport';
-import { Event, Option } from '../ts/classes/classSuport';
+import { Option } from '../ts/classes/classSuport';
+//ts-ignore
 import {beaverSituations} from '../db/situationRef.js';
 import "./Game.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useNavigate } from 'react-router-dom';
 
  function RefineRawData(rawData:object[]){
-    let refinedData:object[] = [];
+    const refinedData:object[] = [];
 
     for(let i = 0; i<rawData.length; i++){
-      let eventObject = {};
+      const eventObject = {};
       eventObject['Event'] = rawData[i]["Event"];
       eventObject['Prompt'] = rawData[i]["Prompt"];
       eventObject['Options'] = [];
@@ -27,10 +29,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Game() {
   const [gameInfo, setGameInfo] = React.useState({data: RefineRawData(beaverSituations), event: {}, survival: 100, level:0});
-  
+
   let imgSrc = "";
-  let component:React.ReactElement=undefined;
-  let gameElementProps:GameEventProps = {};
+  const component:React.ReactElement=undefined;
+  const gameElementProps:GameEventProps = {};
 
   
 
@@ -52,8 +54,8 @@ function Game() {
 
   if(gameInfo.event == undefined || Object.keys(gameInfo.event).length==0){
     console.log(gameInfo);
-    let index = Math.floor(Math.random()*gameInfo.data.length);
-    let tmpGameInfo = gameInfo;
+    const index = Math.floor(Math.random()*gameInfo.data.length);
+    const tmpGameInfo = gameInfo;
     tmpGameInfo.event = gameInfo.data[index];
     tmpGameInfo.data = gameInfo.data.slice(index,1);
     setGameInfo(tmpGameInfo);
@@ -69,7 +71,7 @@ function Game() {
     gameInfo.data = RefineRawData(beaverSituations);
     setGameInfo(gameInfo);
   }
-
+  
   
   
 
