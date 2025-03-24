@@ -32,19 +32,19 @@ function Game() {
   
 
   if(gameInfo.survival>80){
-    imgSrc="/img/glacierNationalPark.jpg";
+    imgSrc = `${import.meta.env.BASE_URL}/img/glacierNationalPark.jpg`;
   }
   else if (gameInfo.survival>60){
-    imgSrc="/img/niceLandscape.jpg";
+    imgSrc = `${import.meta.env.BASE_URL}/img/niceLandscape.jpg`;
   }
   else if (gameInfo.survival>40){
-    imgSrc="/img/normal.jpg";
+    imgSrc = `${import.meta.env.BASE_URL}/img/normal.jpg`;
   }
   else if (gameInfo.survival>20){
-    imgSrc="/img/almostBaren.jpg";
+    imgSrc = `${import.meta.env.BASE_URL}/img/almostBaren.jpg`;
   }
   else{
-    imgSrc="/img/barenLandscape.jpg"
+    imgSrc = `${import.meta.env.BASE_URL}/img/barenLandscape.jpg`;
   }
 
   if(gameInfo.event == undefined || Object.keys(gameInfo.event).length==0){
