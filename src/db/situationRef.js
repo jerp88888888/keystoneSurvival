@@ -113,7 +113,7 @@ export const beaverSituations = [
     },
     {
       "Event": "Avoiding Disease",
-      "Prompt": "You noticed others are unliving at an alarming rate due to illness. How do you avoid the illness?",
+      "Prompt": "You noticed others are dying at an alarming rate due to illness. How do you avoid the illness?",
       "Action 1": "Keep lodge clean",
       "Success Rate 1": 90,
       "Action 2": "Avoid contaminated water",
@@ -197,7 +197,7 @@ export const beaverSituations = [
     },
     {
       "Event": "Competing for Resources",
-      "Prompt": "Resources have become scare. What do you do?",
+      "Prompt": "Resources have become scarce. What do you do?",
       "Action 1": "Find alternative food sources",
       "Success Rate 1": 80,
       "Action 2": "Expand territory",
