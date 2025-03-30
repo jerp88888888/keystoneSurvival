@@ -5,6 +5,7 @@ import { Option } from '../ts/classes/classSuport';
 import {beaverSituations} from '../db/situationRef.js';
 import "./Game.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import UpdateArray from '../ts/UpdateArray.js';
 
  function RefineRawData(rawData:object[]){
     const refinedData:object[] = [];
@@ -48,20 +49,14 @@ function Game() {
   }
 
   if(gameInfo.event == undefined || Object.keys(gameInfo.event).length==0){
-    console.log(gameInfo);
     const index = Math.floor(Math.random()*gameInfo.data.length);
-    const tmpGameInfo = gameInfo;
+    let tmpGameInfo = gameInfo;
     tmpGameInfo.event = gameInfo.data[index];
-    tmpGameInfo.data = gameInfo.data.slice(index,1);
+    tmpGameInfo.data.slice(index,1);
+    tmpGameInfo.data = UpdateArray(tmpGameInfo.data,index);
     setGameInfo(tmpGameInfo);
   }
-  else{
-    console.log("Event chosen");
-  }
-
   
-  
-
   if(gameInfo.data.length < 1){
     gameInfo.data = RefineRawData(beaverSituations);
     setGameInfo(gameInfo);
