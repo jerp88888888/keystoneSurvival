@@ -248,7 +248,7 @@ export const jokes = [
   },
   {
     minimumScore: 60,
-    joke: "Did you chetah?",
+    joke: "Did you cheetah?",
     src: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmxobnRsNm9iZmhkeHgwaDhoeGE0ajBhaXZxcDR6eHo5bHlpZTF6OSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/TczEHnmHv2fu/giphy.gif"
   },
   {
